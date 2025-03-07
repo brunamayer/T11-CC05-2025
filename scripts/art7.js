@@ -12,7 +12,7 @@ function desenharCarro() {
         .attr("fill", cores[0])
         .attr("stroke", "black")
         .attr("stroke-width", "2");
-
+ 
     // Teto do carro
     art7.append("path")
         .attr("d", "M130,80 L140,50 L260,50 L270,80")

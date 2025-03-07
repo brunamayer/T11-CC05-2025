@@ -2,7 +2,7 @@ const svg3 = d3.select("#art3")
   .append("svg")
   .attr("width", 200)
   .attr("height", 200);
-
+ 
 svg3.append("circle")
   .attr("cx", 100)
   .attr("cy", 80)

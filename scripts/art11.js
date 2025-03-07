@@ -6,7 +6,7 @@ const width11 = 500, height11 = 500;
             .attr("height", height11);
 
         let houseX = 200, houseY = 250;
-        
+         
         const houseGroup = art11.append("g")
             .attr("transform", `translate(${houseX},${houseY})`);
 

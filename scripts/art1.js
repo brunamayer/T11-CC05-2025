@@ -3,7 +3,7 @@ const svg = d3.select("#art1")
 
 const cxValores = [875, 800, 725, 650, 575, 500, 425, 350];
 const cy = 500;
-const r = 50;
+const r = 50; 
 
 const segmentos = cxValores.map(cx => ({ cx, cy, r }));
 

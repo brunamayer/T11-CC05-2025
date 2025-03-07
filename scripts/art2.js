@@ -2,7 +2,7 @@
 const svg2 = d3.select("#art2").append("svg")
     .attr("width", 500)
     .attr("height", 500);
-
+ 
 // Adiciona o rosto
 const face = svg2.append("circle")
     .attr("cx", 250)

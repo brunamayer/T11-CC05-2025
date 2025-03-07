@@ -11,7 +11,7 @@ var head = svgSelection
         .attr("cy", height / 2)
         .attr("r", 200)
         .style("fill", "#11EE55");
-
+ 
 var eye = svgSelection
         .append("circle")
         .attr("cx", width / 2)

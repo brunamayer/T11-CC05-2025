@@ -1,6 +1,6 @@
 
 // Define largura para a div
-const n = 500;
+const n = 700;
 const maxIterations = 50000; // Estabelece limite para o número de iterações do jogo do caos
 
 // Define cores para os pontos
@@ -28,7 +28,7 @@ const art10 = d3
 	.append('svg')
 	.attr('width', n)
 	.attr('height', n);
-
+ 
 // Define primeiro ponto atual ao acaso
 let currentPoint = {
 	x: Math.random() * n,

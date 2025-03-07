@@ -6,7 +6,7 @@ const posicoesRodas = [
 ]
 
 
-
+ 
 
 // ------- CHAO --------
 art9.append("rect")
