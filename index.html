@@ -11,19 +11,23 @@
             font-family: 'Space Mono', monospace;
             text-align: center;
             margin: 0;
-            padding: 40px;
-            background: #f8f8f8;
+            padding: 20px;
+            background: #262626;
         }
         h1 {
-            font-size: 48px;
-            font-weight: 700;
+            font-size: 38px;
+            font-weight: 750;
+            letter-spacing: 2px;
             margin-bottom: 10px;
+            margin-top: 5%;
+            color: rgb(245, 245, 245);
         }
         p {
-            font-size: 20px;
+            font-size: 16px;
             font-family: 'Roboto', sans-serif;
-            max-width: 800px;
-            margin: 0 auto 40px auto;
+            max-width: 500px;
+            margin: 30px auto 30px auto;
+            color: rgb(245, 245, 245);
         }
         .gallery {
             display: flex;
@@ -31,41 +35,50 @@
             align-items: center;
             gap: 40px;
             width: 100%;
+            margin-top: 90px;
         }
         .art-container {
             width: 50%;
-            max-width: 500px;
+            max-width: 700px;
             aspect-ratio: 16 / 9;
             display: flex;
             flex-direction: column;
             align-items: center;
             background: #fff;
             padding: 20px;
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            box-shadow: 15px 15px rgba(20, 20, 20, 0.8);
+            border-radius: 0px;
         }
         .info {            
             font-family: 'Roboto', sans-serif;
             font-size: 12px;
             font-weight: 400;
             margin-bottom: 10px;
+            margin-top: 20px;
         }
         svg {
             width: 100%;
             height: auto;
-            max-width: 500px;
-            max-height: 300px;
+            max-width: 700px;
+            max-height: 700px;
         }
     </style>
 </head>
 <body>
-    <h1>Galeria de CC</h1>
-    <p>Imagens interativas feitas com D3.js pelos alunos da T11 de Ciências da Computação</p>
-    
+    <h1>GALERIA INTERATIVA DE CC</h1>
+    <p>Esta galeria apresenta desenhos interativos desenvolvidos pelos alunos da Turma 11 do curso de Ciências da Computação do Inteli.</p>   
+    <p> Os projetos representam os primeiros experimentos na aplicação de técnicas de visualização de dados e criação de experiências interativas, utilizando a biblioteca D3.js. </p>
+       
+   
     <div class="gallery">
         <div class="art-container">
             <svg id="art1" viewBox="0 0 500 300" preserveAspectRatio="xMidYMid meet"></svg>
-            <div class="info">Grafo de Minhoca (Bruna Mayer, 2025)</div>
+            <div class="info">Minhoca (Bruna Mayer, 2025)</div>
+        </div>
+
+        <div class="art-container">
+            <svg id="art6" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">Pokebola Interativa em D3 (Gustavo Colombini, 2025)</div>
         </div>
 
         <div class="art-container">
@@ -79,16 +92,41 @@
         </div>
 
         <div class="art-container">
-            <svg id="art4" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet"></svg>
+            <svg id="art4" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMid meet"></svg>
             <div class="info">Maçãs sem Newton (Leonardo Ogata,	Yanomã Konwski e Júlia Alves, 2025)</div>
         </div>
 
         <div class="art-container">
-            <svg id="art5" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid meet"></svg>
-            <div class="info">Pingu (Davi Basã e	Patrick Savoia, 2025)</div>
+            <svg id="art5" viewBox="0 0 600 500" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">Pingu (Davi Basã e Patrick Savoia, 2025)</div>
+        </div>
+
+        <div class="art-container">
+            <svg id="art7" viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">Transformer (Lucas Magalhães Castro Rodrigues, 2025)</div>
+        </div>
+
+        <div class="art-container">
+            <svg id="art8" viewBox="0 0 700 700" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">Don't touch my eye! (Guilherme Lopes de Carvalho, 2025)</div>
+        </div>
+
+        <div class="art-container">
+            <svg id="art9" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">Passeando de carro (Pedro Siqueira de Souza, 2025)</div>
         </div>
 
 
+        <div class="art-container">
+            <svg id="art10" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">Fractal pentagonal formado usando jogo do caos</div>
+            <p style="color:black"> (Wildisley José de Souza Filho, Vinicius Testa Passos e Giovanna Britto Vieira, 2025)</p>
+        </div>
+
+        <div class="art-container">
+            <svg id="art11" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="info">casa simples que acende (Eduardo Farias Rizk, 2025)</div>
+        </div>
 
 
     </div>
@@ -97,8 +135,13 @@
     <script src="scripts/art2.js"></script>
     <script src="scripts/art3.js"></script>
     <script src="scripts/art4.js"></script>
-    
     <script src="scripts/art5.js"></script>
+    <script src="scripts/art6.js"></script>
+    <script src="scripts/art7.js"></script>
+    <script src="scripts/art8.js"></script>
+    <script src="scripts/art9.js"></script>
+    <script src="scripts/art10.js"></script>
+    <script src="scripts/art11.js"></script>
 
 </body>
 </html>
